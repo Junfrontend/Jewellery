@@ -1,0 +1,40 @@
+.slider-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 130px 98px 60px 98px;
+}
+
+.slider-control__right-arrow {
+  svg {
+    stroke: #a87b62;
+  }
+}
+
+.slider-control__text-wrapper {
+  h2 {
+    margin: 0;
+    color: #1d1613;
+    font-family: $font-Cormorant-Bold;
+    font-size: 34px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+
+  a {
+    display: block;
+    color: #1d1613;
+    font-family: $font-Poppins;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 11px;
+    text-decoration: none;
+    border-bottom: 1px solid #a87b62;
+    width: 80px;
+  }
+}
+
+.slider-control__left-arrow,
+.slider-control__right-arrow {
+  margin-top: 32px;
+}

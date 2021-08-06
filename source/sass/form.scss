@@ -1,0 +1,52 @@
+.form__input-wrapper {
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 43px;
+  padding-bottom: 9px;
+
+  input {
+    border: none;
+    background: none;
+    color: #9b9997;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $font-Poppins;
+    font-weight: bold;
+    padding: 0;
+    letter-spacing: 0.1px;
+  }
+
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: $font-Poppins;
+  }
+
+  svg {
+    stroke: #ffffff;
+    margin-left: 10px;
+  }
+
+  use {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form__input-wrapper {
+    width: 560px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form__input-wrapper {
+    margin-top: 42px;
+    width: 100.2%;
+  }
+}

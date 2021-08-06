@@ -1,0 +1,143 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 115px;
+  padding: 0 98px;
+
+  label {
+    margin-top: 42px;
+  }
+
+  input {
+    border: none;
+    font-family: $font-Poppins;
+    font-weight: bold;
+    color: #9b9997;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 10px;
+  }
+}
+
+.top-bar__logo {
+  margin-top: 30px;
+  margin-right: 90px;
+}
+
+.top-bar__user-info {
+  font-family: $font-Poppins;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  width: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 42px;
+  letter-spacing: 0.5px;
+
+  a {
+    text-decoration: none;
+    color: #1d1613;
+  }
+}
+
+.top-bar__icon-cart {
+  fill: none;
+  stroke: #1d1613;
+}
+
+.top-bar__menu-button {
+  display: none;
+  border: none;
+  background: none;
+  width: 25px;
+  height: 16px;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .top-bar__icon-cart {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .top-bar__logo {
+    margin: 0;
+    margin-right: 5px;
+  }
+
+  .top-bar__logo--white,
+  .top-bar__icon-cart--menu-opened {
+    stroke: #ffffff;
+  }
+
+  .top-bar__menu-button {
+    display: block;
+
+    svg {
+      stroke: #1d1613;
+    }
+  }
+
+  .top-bar__menu-button--menu-opened {
+    svg {
+      stroke: #ffffff;
+    }
+  }
+
+
+  .top-bar {
+    box-sizing: border-box;
+    height: 126px;
+    align-items: center;
+    padding: 55px 45px;
+
+    .top-bar__user-info,
+    label {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .top-bar__logo {
+    margin: 0;
+    margin-right: 5px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .top-bar__logo--white,
+  .top-bar__icon-cart--menu-opened {
+    stroke: #ffffff;
+  }
+
+  .top-bar__menu-button {
+    display: block;
+
+    svg {
+      stroke: #1d1613;
+    }
+  }
+
+  .top-bar__menu-button--menu-opened {
+    svg {
+      stroke: #ffffff;
+    }
+  }
+
+
+  .top-bar {
+    box-sizing: border-box;
+    height: 92px;
+    align-items: center;
+    padding: 20px 15px;
+
+    .top-bar__user-info,
+    label {
+      display: none;
+    }
+  }
+}

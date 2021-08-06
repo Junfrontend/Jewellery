@@ -1,0 +1,85 @@
+.intro {
+  height: 463px;
+  background: url("../img/intro-desktop@1x.png") no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 51px;
+    font-family: $font-Cormorant-Bold;
+    margin: 0;
+    margin-top: 5px;
+    letter-spacing: 1.2px;
+  }
+
+  span {
+    font-family: $font-Cormorant-Italic;
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 49px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .intro {
+    background: url("../img/intro-desktop@2x.png") no-repeat 0 0 /cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro {
+    background: url("../img/intro-tablet@1x.png") no-repeat 0 0 /cover;
+    background-position: center;
+
+    h2,
+    span {
+      margin-right: 18px;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background: url("../img/intro-tablet@2x.png") no-repeat 0 0 /cover;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    background: url("../img/intro-mobile@1x.png") no-repeat 0 0 /cover;
+
+    h2 {
+      font-size: 38px;
+      line-height: 42px;
+    }
+
+    span {
+      font-size: 34px;
+      line-height: 44px;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background: url("../img/intro-mobile@2x.png") no-repeat 0 0 /cover;
+    }
+  }
+
+  @media (min-width: 450px) and (max-width: 767px) {
+    .intro {
+      background: url("../img/intro-tablet@1x.png") no-repeat 0 0 /cover;
+      background-position: center;
+    }
+
+    @media (min-resolution: 2dppx) {
+      .intro {
+        background: url("../img/intro-tablet@2x.png") no-repeat 0 0 /cover;
+        background-position: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.svg-sprite {
+  display: none;
+}
+
+body {
+  margin: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.visualy-hidden {
+  font-size: 0;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins.woff2") format("woff2"),
+    url("../fonts/Poppins.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CormorantGaramond-Italic";
+  src: url("../fonts/CormorantGaramond-Italic.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CormorantGaramond-Bold";
+  src: url("../fonts/CormorantGaramond-Bold.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-Bold.woff") format("woff");
+}
+
+$font-Poppins: "Poppins", "Arial", sans-serif;
+
+$font-Cormorant-Italic: "CormorantGaramond-Italic", "Arial", sans-serif;
+
+$font-Cormorant-Bold: "CormorantGaramond-Bold", "Arial", sans-serif;
