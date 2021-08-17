@@ -123,6 +123,10 @@
     label {
       display: none;
     }
+
+    a {
+      right: 4px;
+    }
   }
 }
 
@@ -162,6 +166,12 @@
     .top-bar__user-info,
     label {
       display: none;
+    }
+
+    a {
+      right: inherit;
+      top: 7px;
+      left: 4px;
     }
   }
 }

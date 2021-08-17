@@ -28,6 +28,11 @@
     font-weight: bold;
     color: #1d1613;
   }
+
+  a {
+    text-decoration: none;
+    color: #1d1613;
+  }
 }
 
 .slider__item--item-page {
@@ -52,6 +57,10 @@
 
   .slider__item--item-page {
     max-width: 270px;
+
+    h3 {
+      margin-top: 18px;
+    }
   }
 }
 
@@ -111,7 +120,7 @@
 
   .slider__item--purple-gemstone-necklace {
     h3 {
-      margin-left: 9px;
+      margin-left: 0;
       letter-spacing: 0.1px;
     }
   }

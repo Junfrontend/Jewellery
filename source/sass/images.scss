@@ -8,6 +8,10 @@
   }
 }
 
+.images__counter {
+  display: none;
+}
+
 .images__small-group {
   display: flex;
   flex-direction: column;
@@ -56,6 +60,7 @@
     height: auto;
     padding: 0 15px;
     box-sizing: border-box;
+    position: relative;
   }
 
   .images__small-group {
@@ -79,7 +84,19 @@
     img {
       width: 290px;
       height: 260px;
-      object-fit: cover;
     }
+  }
+
+  .images__counter {
+    display: block;
+    position: absolute;
+    font-family: $font-Poppins;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1d1613;
+    width: 44px;
+    left: calc((100% - 39px) / 2);
+    bottom: 10px;
+    letter-spacing: 0.6px;
   }
 }

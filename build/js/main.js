@@ -10128,6 +10128,7 @@ var swiper = swiper = new window.Swiper('.swiper-container', {
       slidesPerView: 4,
       slidesPerGroup: 4,
       slidesOffsetBefore: -546,
+      spaceBetween: 25,
     },
   },
 });
@@ -10171,7 +10172,7 @@ var swiper = swiper = new window.Swiper('.swiper-container--item-page', {
     767: {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      slidesOffsetBefore: -223,
+      slidesOffsetBefore: -221,
     },
     1023: {
       slidesPerView: 4,
@@ -10182,7 +10183,8 @@ var swiper = swiper = new window.Swiper('.swiper-container--item-page', {
     1365: {
       slidesPerView: 4,
       slidesPerGroup: 4,
-      slidesOffsetBefore: -546,
+      slidesOffsetBefore: -540,
+      spaceBetween: 30,
     },
   },
 });
