@@ -1,5 +1,4 @@
 'use strict';
-
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var sourcemap = require('gulp-sourcemaps');
@@ -15,6 +14,7 @@ var svgstore = require('gulp-svgstore')
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
+var concat = require('gulp-concat');
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
@@ -86,7 +86,6 @@ gulp.task('copy', function () {
   return gulp.src([
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
-    'source/js/**',
     'source//*.ico'
   ], {
     base: 'source'
@@ -98,5 +97,11 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'webp', 'html'));
+gulp.task('scripts', function () {
+  return gulp.src('source/js/*.js') // путь к папке со скриптами
+    .pipe(concat('main.js')) // в какой файл объединить
+    .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'webp', 'html', 'scripts'));
 gulp.task('start', gulp.series('build', 'server'));

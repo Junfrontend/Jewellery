@@ -6,6 +6,13 @@
 
   label {
     margin-top: 42px;
+    height: 25px;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid #1d1613;
+      cursor: pointer;
+    }
   }
 
   input {
@@ -16,6 +23,14 @@
     font-size: 14px;
     line-height: 21px;
     margin-left: 10px;
+  }
+
+  a {
+    display: block;
+    width: 66px;
+    height: 66px;
+    position: relative;
+    right: 45px;
   }
 }
 
@@ -39,6 +54,16 @@
   a {
     text-decoration: none;
     color: #1d1613;
+    height: 20px;
+    width: max-content;
+    position: inherit;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #1d1613;
+      color: #ffffff;
+    }
   }
 }
 
@@ -62,7 +87,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .top-bar__logo {
     margin: 0;
     margin-right: 5px;
@@ -127,7 +152,6 @@
       stroke: #ffffff;
     }
   }
-
 
   .top-bar {
     box-sizing: border-box;

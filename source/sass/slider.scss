@@ -1,21 +1,22 @@
 .slider {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: scroll;
   padding: 0 98px;
 }
 
 .slider__item {
-  margin-right: 30px;
+  width: 270px;
+
+  &:hover,
+  &:focus {
+    transform: rotate(2deg);
+    cursor: pointer;
+  }
 
   h3 {
     text-align: center;
     font-family: $font-Poppins;
-    font-size: 14.5px;
+    font-size: 16px;
     line-height: 21px;
     margin: 0;
-    margin-top: 14px;
-    color: #1d1613;
   }
 
   span {
@@ -26,6 +27,117 @@
     line-height: 18px;
     font-weight: bold;
     color: #1d1613;
+  }
+}
+
+.slider__item--item-page {
+  span {
     margin-top: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider__item {
+    h3 {
+      margin-top: 16px;
+      color: #1d1613;
+      width: 270px;
+    }
+
+    span {
+      margin-top: 6px;
+      width: 270px;
+    }
+  }
+
+  .slider__item--item-page {
+    max-width: 270px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .slider__item {
+    width: 218px;
+
+    img {
+      width: 218px;
+      height: 230px;
+    }
+
+    h3 {
+      margin-top: 16px;
+      color: #1d1613;
+      width: 212px;
+    }
+
+    span {
+      margin-top: 6px;
+      width: 212px;
+    }
+  }
+
+  .slider__item--item-page {
+    max-width: 218px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slider {
+    padding: 0 45px;
+  }
+
+  .slider__item {
+    max-width: 324px;
+
+    img {
+      width: 324px;
+      height: 340px;
+    }
+
+    h3,
+    span {
+      width: 324px;
+    }
+
+    h3 {
+      margin-top: 17px;
+    }
+
+    span {
+      margin-top: 6px;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  .slider__item--purple-gemstone-necklace {
+    h3 {
+      margin-left: 9px;
+      letter-spacing: 0.1px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    padding: 0 15px;
+  }
+
+  .slider__item {
+    max-width: 130px;
+
+    img {
+      width: 130px;
+      height: 136px;
+    }
+
+    h3 {
+      margin-top: 12px;
+      width: 130px;
+    }
+
+    span {
+      margin-top: 6px;
+      width: 130px;
+    }
   }
 }

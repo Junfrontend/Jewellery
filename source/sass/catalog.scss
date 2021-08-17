@@ -1,0 +1,72 @@
+.catalog__pagination {
+  margin: 0 auto;
+  margin-top: 51px;
+  width: 48px;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    font-family: $font-Poppins;
+    color: #9b9997;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #1d1613;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog {
+    width: 1178px;
+  }
+
+  .catalog__pagination {
+    span {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  .catalog--item-page {
+    margin-bottom: 127px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .catalog {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .catalog {
+    width: 678px;
+  }
+
+  .catalog__pagination {
+    width: 118px;
+    margin-top: 41px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog {
+    width: 290px;
+  }
+
+  .catalog__pagination {
+    width: 50px;
+    margin-top: 8px;
+
+    span {
+      color: #1d1613;
+    }
+  }
+}

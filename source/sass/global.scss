@@ -2,8 +2,23 @@
   display: none;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  height: 100%;
+}
+
+.main-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 1 auto;
 }
 
 .overflow-hidden {
@@ -12,6 +27,22 @@ body {
 
 .visualy-hidden {
   font-size: 0;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 0 25px;
+  }
 }
 
 @font-face {

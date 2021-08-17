@@ -1,8 +1,21 @@
 .footer {
+  background-color: #000000;
+}
+
+.footer__wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 80px 100px 93px 100px;
-  background-color: #000000;
+
+  li {
+    width: max-content;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid #ffffff;
+      cursor: pointer;
+    }
+  }
 }
 
 .footer__form {
@@ -81,8 +94,20 @@
   }
 
   li {
-    margin-right: 10px;
+    margin-left: 10px;
     display: block;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer__wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1366px;
   }
 }
 
@@ -98,9 +123,44 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .footer__wrapper {
+    padding: 50px 30px 50px 30px;
+  }
+
+  .footer__info {
+    margin-left: 15px;
+    width: auto;
+  }
+
+  .footer__second-list {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .footer__wrapper {
+    padding: 50px 50px 50px 50px;
+  }
+
+  .footer__info {
+    margin-left: 50px;
+    width: auto;
+  }
+
+  .footer__second-list {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .footer {
     padding: 50px 0 60px 45px;
+    justify-content: space-between;
+  }
+
+  .footer__wrapper {
+    padding: 0;
   }
 
   .footer__form {
@@ -113,6 +173,10 @@
   .footer__info {
     margin-left: 0;
     margin-top: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 370px;
 
     ul {
       grid-row-gap: 21px;
@@ -122,9 +186,25 @@
   }
 
   .footer__social-links {
-    margin-left: 88px;
     margin-right: auto;
+    margin-left: 78px;
     margin-top: 45px;
+
+    svg {
+      margin-right: 12px;
+    }
+  }
+
+  @media (min-width: 800px) and (max-width: 1023px) {
+    .footer {
+      padding: 50px 45px 60px 70px;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1023px) {
+    .footer {
+      padding: 50px 45px 60px 130px;
+    }
   }
 }
 
@@ -133,6 +213,11 @@
     padding: 48px 15px 60px 15px;
     display: flex;
     flex-direction: column;
+  }
+
+  .footer__wrapper {
+    display: block;
+    padding: 0;
   }
 
   .footer__info {
@@ -164,7 +249,7 @@
 
   .footer__social-links {
     margin-left: 0;
-    margin-top: 49px;
+    margin-top: 47px;
 
     ul {
       flex-direction: row;
@@ -177,11 +262,12 @@
     }
 
     svg {
-      transform: scale(1.4);
+      transform: scale(1.35);
     }
 
     li {
-      margin-right: 32.5px;
+      margin-left: 0;
+      margin-right: 23px;
     }
   }
 }

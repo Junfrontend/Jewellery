@@ -1,0 +1,93 @@
+.controls {
+  background: #fefeff;
+  position: relative;
+}
+
+.controls__scale {
+  width: 304px;
+  height: 1px;
+  background-color: #f0eae4;
+  position: relative;
+  top: 8px;
+  left: 10px;
+}
+
+.controls__bar {
+  width: 170px;
+  height: 1px;
+  background-color: #a87b62;
+  position: absolute;
+  left: 59px;
+}
+
+.controls__toggle-min,
+.controls__toggle-max {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #a87b62;
+  position: absolute;
+}
+
+.controls__toggle-min {
+  top: 0;
+  left: 53px;
+}
+
+.controls__toggle-max {
+  top: 0;
+  left: 230px;
+}
+
+@media (min-width: 1024px) {
+  .controls__scale {
+    width: 200px;
+    top: 2px;
+    left: 0;
+  }
+
+  .controls__bar {
+    width: 90px;
+  }
+
+  .controls__toggle-min {
+    top: -5px;
+    left: 44px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .controls__toggle-max {
+    top: -5px;
+    left: 149px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .controls__scale {
+    width: 250px;
+    height: 1px;
+    top: 10;
+    left: -10px;
+  }
+
+  .controls__bar {
+    width: 120px;
+    height: 1px;
+    background-color: #a87b62;
+    position: absolute;
+    left: 59px;
+  }
+
+  .controls__toggle-min {
+    top: 0;
+    left: 30px;
+  }
+
+  .controls__toggle-max {
+    top: 0;
+    left: 168px;
+  }
+}
