@@ -49,18 +49,21 @@ body {
   font-family: "Poppins";
   src: url("../fonts/Poppins.woff2") format("woff2"),
     url("../fonts/Poppins.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "CormorantGaramond-Italic";
   src: url("../fonts/CormorantGaramond-Italic.woff2") format("woff2"),
     url("../fonts/CormorantGaramond-Italic.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "CormorantGaramond-Bold";
   src: url("../fonts/CormorantGaramond-Bold.woff2") format("woff2"),
     url("../fonts/CormorantGaramond-Bold.woff") format("woff");
+  font-display: swap;
 }
 
 $font-Poppins: "Poppins", "Arial", sans-serif;

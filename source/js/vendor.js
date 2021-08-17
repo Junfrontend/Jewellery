@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var swiper = swiper = new window.Swiper('.swiper-container', {
   loop: true,
@@ -12,7 +12,7 @@ var swiper = swiper = new window.Swiper('.swiper-container', {
   pagination: {
     el: document.querySelector('.catalog__pagination'),
     clickable: 'true',
-    renderBullet(index, className) {
+    renderBullet: function (index, className) {
       return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
   },
@@ -31,8 +31,8 @@ var swiper = swiper = new window.Swiper('.swiper-container', {
         el: document.querySelector('.catalog__pagination'),
         clickable: 'true',
         type: 'fraction',
-        renderFraction(currentClass, totalClass) {
-          return '<span class="' + currentClass + '"></span>' +'<span>of</span>' + '<span class="' + totalClass + '"></span>';
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + '<span>of</span>' + '<span class="' + totalClass + '"></span>';
         },
       },
     },
@@ -57,7 +57,7 @@ var swiper = swiper = new window.Swiper('.swiper-container', {
   },
 });
 
-var swiper = swiper = new window.Swiper('.swiper-container--item-page', {
+var swiperCat = swiper = new window.Swiper('.swiper-container--item-page', {
   loop: true,
   slidesPerGroup: 2,
   slidesPerView: 2,
@@ -69,7 +69,7 @@ var swiper = swiper = new window.Swiper('.swiper-container--item-page', {
   pagination: {
     el: document.querySelector('.catalog__pagination'),
     clickable: 'true',
-    renderBullet(index, className) {
+    renderBullet: function (index, className) {
       return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
   },
@@ -88,8 +88,8 @@ var swiper = swiper = new window.Swiper('.swiper-container--item-page', {
         el: document.querySelector('.catalog__pagination'),
         clickable: 'true',
         type: 'fraction',
-        renderFraction(currentClass, totalClass) {
-          return '<span class="' + currentClass + '"></span>' +'<span>of</span>' + '<span class="' + totalClass + '"></span>';
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + '<span>of</span>' + '<span class="' + totalClass + '"></span>';
         },
       },
     },
@@ -112,3 +112,6 @@ var swiper = swiper = new window.Swiper('.swiper-container--item-page', {
     },
   },
 });
+
+swiper.slideNext();
+swiperCat.slideNext();
