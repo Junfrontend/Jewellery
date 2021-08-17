@@ -171,7 +171,6 @@ if (itemsCartCounter) {
   });
 }
 
-
 /**
  * Swiper 6.8.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -183,7 +182,7 @@ if (itemsCartCounter) {
  *
  * Released on: August 3, 2021
  */
-(function (global, factory) {
+export default (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Swiper = factory());
@@ -10074,6 +10073,8 @@ if (itemsCartCounter) {
 
 })));
 //# sourceMappingURL=swiper-bundle.js.map
+
+'use strict'
 
 var swiper = swiper = new window.Swiper('.swiper-container', {
   loop: true,
