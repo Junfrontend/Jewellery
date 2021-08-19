@@ -5,3 +5,7 @@ env:
 
 extends:
   "htmlacademy/es5"
+
+parserOptions:
+  "sourceType": "module"
+

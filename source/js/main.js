@@ -1,5 +1,3 @@
-'use strict';
-
 var menuButton = document.querySelector('.top-bar__menu-button');
 var headerTopBar = document.querySelector('.top-bar');
 var header = document.querySelector('.header');

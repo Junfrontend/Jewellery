@@ -93,15 +93,21 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('build'));
 });
 
+gulp.task('rename', function () {
+  return gulp.src('source/js/swiper-bundle.js')
+    .pipe(rename('vendor.js'))
+    .pipe(gulp.dest('build/js/'));
+});
+
 gulp.task('clean', function () {
   return del('build');
 });
 
 gulp.task('scripts', function () {
-  return gulp.src('source/js/*.js') // путь к папке со скриптами
+  return gulp.src(['source/js/main.js', 'source/js/vendor.js'], { base: './source/js' }) // путь к папке со скриптами
     .pipe(concat('main.js')) // в какой файл объединить
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'webp', 'html', 'scripts'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'rename', 'images', 'sprite', 'webp', 'html', 'scripts'));
 gulp.task('start', gulp.series('build', 'server'));

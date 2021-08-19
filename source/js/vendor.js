@@ -1,4 +1,4 @@
-'use strict';
+import Swiper from './vendor.js';
 
 var swiper = swiper = new window.Swiper('.swiper-container', {
   loop: true,
@@ -113,5 +113,10 @@ var swiperCat = swiper = new window.Swiper('.swiper-container--item-page', {
   },
 });
 
-swiper.slideNext();
-swiperCat.slideNext();
+
+if (Swiper) {
+  document.querySelector('.slider-control__right-arrow').addEventListener(('click'), function () {
+    swiper.slideNext();
+    swiperCat.slideNext();
+  });
+}

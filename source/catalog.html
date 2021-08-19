@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <div class="main-wrapper">
   <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol id="icon-bottom-short-arrow" viewBox="0 0 17 10">
       <path d="M1 1L8.5 9L16 1" stroke="#A87B62" />
@@ -116,7 +117,7 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="main-content">
     <h1 class="visualy-hidden">СH - Jewellery store</h1>
     <section class="intro-catalog">
       <h2>ALL JEWELLERY</h2>
@@ -125,7 +126,7 @@
     <section class="main-catalog">
       <h2 class="main-catalog__header visualy-hidden">Choose your PERFECTION</h2>
       <div class="main-catalog__filter filter filter--closed">
-        <button class="filter__show-button">Filter</button>
+        <button type="button" class="filter__show-button">Filter</button>
         <form action="https://echo.htmlacademy.ru/">
           <div class="filter__fieldset-wrapper">
             <fieldset class="filter__field">
@@ -456,7 +457,7 @@
     <section class="pagination">
       <h2 class="visualy-hidden">Pagination</h2>
       <div class="pagination__wrapper">
-        <button class="pagination__prev">
+        <button type="button" class="pagination__prev">
           Previous
         </button>
         <ul class="pagination__page-list page-list">
@@ -466,33 +467,12 @@
           <li>4</li>
           <li>5</li>
         </ul>
-        <button class="pagination__next">
+        <button type="button" class="pagination__next">
           Next
         </button>
       </div>
     </section>
-    <section class="login login--modal login--hidden">
-      <div class="login__wrapper">
-        <h2>Log In</h2>
-        <form action="https://echo.htmlacademy.ru/">
-          <button class="login__close-button" type="button"></button>
-          <label class="login__email">
-            <input type="email" required placeholder="Your E-mail">
-          </label>
-          <label class="login__password">
-            <input type="text" required placeholder="Password">
-          </label>
-          <a class="login__forgot-pass" href="#">Forgot your password?</a>
-          <button class="login__log-in-button" type="submit">Log In</button>
-          <div class="login__extra-info">
-            <span>Don’t have an account?</span>
-            <a class="login__sign-up" href="#">Sign up</a>
-          </div>
-        </form>
-      </div>
-    </section>
   </main>
-
   <footer class="footer">
     <div class="footer__wrapper">
       <form class="footer__form form" action="https://echo.htmlacademy.ru/" method="POST">
@@ -502,7 +482,7 @@
           <label>
             <input type="email" placeholder="Your E-mail">
           </label>
-          <button>
+          <button type="button">
             Sign Up
             <svg width="30" height="11">
               <use xlink:href="#icon-right-arrow"></use>
@@ -562,7 +542,29 @@
       </div>
     </div>
   </footer>
+  <section class="login login--modal login--hidden">
+    <div class="login__wrapper">
+      <h2>Log In</h2>
+      <form action="https://echo.htmlacademy.ru/">
+        <button class="login__close-button" type="button"></button>
+        <label class="login__email">
+          <input type="email" required placeholder="Your E-mail">
+        </label>
+        <label class="login__password">
+          <input type="text" required placeholder="Password">
+        </label>
+        <a class="login__forgot-pass" href="#">Forgot your password?</a>
+        <button class="login__log-in-button" type="submit">Log In</button>
+        <div class="login__extra-info">
+          <span>Don’t have an account?</span>
+          <a class="login__sign-up" href="#">Sign up</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
   <script src="js/main.js" type="module"></script>
+  <script src="js/vendor.js" type="module"></script>
 </body>
 
 </html>
