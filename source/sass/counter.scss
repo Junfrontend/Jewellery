@@ -99,18 +99,21 @@
   .counter {
     input {
       font-size: 18px;
+      top: 30px;
+      right: -3.5px;
     }
   }
 
   .counter__minus-button {
-    top: 45px;
+    top: 44px;
+    left: 2px;
   }
 }
 
 @media (max-width: 767px) {
   .counter {
     input {
-      top: 26px;
+      top: 28px;
       right: -3.5px;
     }
   }

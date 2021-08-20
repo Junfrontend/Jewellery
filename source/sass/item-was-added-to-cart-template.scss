@@ -211,7 +211,7 @@
 
   .item-was-added-to-cart-template__close-button {
     top: 18px;
-    right: 28px;
+    right: 23px;
   }
 
   .item-was-added-to-cart-template__purchase-info {
@@ -261,13 +261,14 @@
 @media (max-width: 767px) {
   .item-was-added-to-cart-template__continue-button,
   .item-was-added-to-cart-template__checkout-button {
+    display: block;
     width: 90%;
     margin-top: 20px;
   }
 
   .item-was-added-to-cart-template__close-button {
     top: 13px;
-    right: 22px;
+    right: 16px;
   }
 
   .item-was-added-to-cart-template__mask {
