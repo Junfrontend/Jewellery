@@ -109,5 +109,5 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'rename', 'images', 'sprite', 'webp', 'html', 'scripts'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'rename', 'sprite', 'webp', 'html', 'scripts')); // 'images',
 gulp.task('start', gulp.series('build', 'server'));

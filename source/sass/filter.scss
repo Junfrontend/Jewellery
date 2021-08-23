@@ -44,7 +44,7 @@
 
   &:hover,
   &:focus {
-    outline: 1px solid #1d1613;
+    transform: scale(0.95);
     cursor: pointer;
   }
 
@@ -439,6 +439,10 @@
 
   .filter__field--price {
     padding-right: 0;
+
+    .filter__header--closed {
+      padding-right: 19px;
+    }
 
     svg {
       right: 18px;
