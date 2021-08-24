@@ -80,7 +80,7 @@
         </svg>
         <input type="text" placeholder="Type here to search">
       </label>
-      <a href="index.html">
+      <a href="main.html">
         <svg class="top-bar__logo" width="66" height="66">
           <use xlink:href="#logo"></use>
         </svg>
@@ -101,11 +101,11 @@
         <input type="text">
       </label>
       <ul>
-        <li>What`s&nbsp;new</li>
-        <li>Chokers</li>
-        <li>Necklaces</li>
-        <li>Rings</li>
-        <li>Earrings</li>
+        <li><a href="#">What`s&nbsp;new</a></li>
+          <li><a href="#">Chokers</a></li>
+          <li><a href="#">Necklaces</a></li>
+          <li><a href="#">Rings</a></li>
+          <li><a href="#">Earrings</a></li>
       </ul>
       <div class="nav-bar__extra-info">
         <ul>
@@ -431,8 +431,8 @@
           </div>
           <div class="cart-item__counter counter">
             <button class="counter__plus-button" type="button"></button>
-            <label>
-              <input type="number" readonly value="1">
+            <label class="counter__value">
+              <input type="text" readonly value="1">
             </label>
             <button class="counter__minus-button" type="button"></button>
           </div>
@@ -466,16 +466,16 @@
       </form>
       <div class="footer__info">
         <ul class="footer__first-list">
-          <li>Ordering & Payment</li>
-          <li>Terms & Conditions</li>
-          <li>Returns & Exchanges</li>
-          <li>Delivery</li>
+          <li><a href="#">Ordering & Payment</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Delivery</a></li>
         </ul>
         <ul class="footer__second-list">
-          <li>About CH</li>
-          <li>Stores & Hours</li>
-          <li>Jobs</li>
-          <li>Contact Us</li>
+          <li><a href="#">About CH</a></li>
+          <li><a href="#">Stores & Hours</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer__social-links">
@@ -525,7 +525,7 @@
           <input type="email" required placeholder="Your E-mail">
         </label>
         <label class="login__password">
-          <input type="text" required placeholder="Password">
+          <input type="password" required placeholder="Password">
         </label>
         <a class="login__forgot-pass" href="#">Forgot your password?</a>
         <button class="login__log-in-button" type="submit">Log In</button>

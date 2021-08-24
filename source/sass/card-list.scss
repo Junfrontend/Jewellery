@@ -117,4 +117,42 @@
       margin-right: 10px;
     }
   }
+
+  @media (min-width: 450px) and (max-width: 767px) {
+    .card-list__item {
+      margin-right: 0;
+      width: 160px;
+      margin-bottom: 26px;
+
+      img {
+        width: 160px;
+        height: 166px;
+      }
+
+      h3 {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  @media (min-width: 550px) and (max-width: 767px) {
+    .card-list {
+      max-width: 550px;
+    }
+
+    .card-list__item {
+      margin-right: 0;
+      width: 190px;
+      margin-bottom: 26px;
+
+      img {
+        width: 190px;
+        height: 196px;
+      }
+
+      h3 {
+        margin-top: 12px;
+      }
+    }
+  }
 }

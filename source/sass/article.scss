@@ -8,6 +8,7 @@
     align-items: center;
     width: 165px;
     margin-top: 67px;
+    margin-bottom: 10px;
   }
 
   span {
@@ -37,8 +38,8 @@
 
 @media (min-width: 1024px) {
   .article--care {
-    height: 300px;
-    background: url("../img/blog-care-desktop@1x.png") no-repeat 0 0 / 50% 300px,
+    min-height: 300px;
+    background: url("../img/blog-care-desktop@1x.png") no-repeat 0 0 / 50% 100%,
       #f0eae4;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -51,8 +52,8 @@
   }
 
   .article--power {
-    height: 300px;
-    background: url("../img/blog-power-desktop@1x.png") no-repeat 0 0 / 50% 300px,
+    min-height: 300px;
+    background: url("../img/blog-power-desktop@1x.png") no-repeat 0 0 / 50% 100%,
       #f0eae4;
     background-position: right;
     grid-row-start: 2;
@@ -67,40 +68,43 @@
   }
 
   .article--trends {
-    height: 630px;
-    background: url("../img/blog-trends-desktop@1x.png") no-repeat,
+    min-height: 630px;
+    background: url("../img/blog-trends-desktop@1x.png") no-repeat 0 0 / 100% 100%,
       #f0eae4;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
+    position: relative;
 
     .article__text-wrapper {
       width: 285px;
-      height: 300px;
+      min-height: 300px;
       box-sizing: border-box;
       background-color: #f0eae4;
-      margin-left: auto;
-      margin-top: 331px;
-      margin-right: -1px;
+      position: absolute;
+      margin: 0;
+      padding-bottom: 10px;
+      right: 0;
+      bottom: 0;
       padding-top: 67px;
     }
   }
 
   @media (min-resolution: 2dppx) {
     .article--care {
-      background: url("../img/blog-care-desktop@2x.png") no-repeat 0 0 / 50% 300px,
+      background: url("../img/blog-care-desktop@2x.png") no-repeat 0 0 / 50% 100%,
         #f0eae4;
     }
 
     .article--power {
-      background: url("../img/blog-power-desktop@2x.png") no-repeat 0 0 / 50% 300px,
+      background: url("../img/blog-power-desktop@2x.png") no-repeat 0 0 / 50% 100%,
         #f0eae4;
       background-position: right;
     }
 
     .article--trends {
-      background: url("../img/blog-trends-desktop@2x.png") no-repeat 0 0 / 570px 630px,
+      background: url("../img/blog-trends-desktop@2x.png") no-repeat 0 0 / 100% 100%
         #f0eae4;
     }
   }

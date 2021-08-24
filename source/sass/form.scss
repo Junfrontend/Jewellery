@@ -9,7 +9,7 @@
   input {
     border: none;
     background: none;
-    color: #9b9997;
+    color: #ffffff;
     font-size: 14px;
     line-height: 21px;
     font-family: $font-Poppins;
@@ -20,7 +20,7 @@
 
     &:hover,
     &:focus {
-      background-color: rgba($color: #ffffff, $alpha: 0.4);
+      outline: 1px solid #ffffff;
       cursor: pointer;
       border-radius: 10px;
     }

@@ -185,6 +185,12 @@
   .item-was-added-to-cart-template__checkout-button {
     padding-right: 7px;
   }
+
+  @media (min-width: 1024px) and (max-width: 1300px) {
+    .item-was-added-to-cart-template__mask {
+      min-width: 477px;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

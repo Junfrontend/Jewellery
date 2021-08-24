@@ -36,6 +36,29 @@ var swiper = swiper = new window.Swiper('.swiper-container', {
         },
       },
     },
+    450: {
+      slidesOffsetBefore: -80,
+      pagination: {
+        el: document.querySelector('.catalog__pagination'),
+        clickable: 'true',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + '<span>of</span>' + '<span class="' + totalClass + '"></span>';
+        },
+      },
+    },
+    550: {
+      slidesOffsetBefore: -60,
+      spaceBetween: 40,
+      pagination: {
+        el: document.querySelector('.catalog__pagination'),
+        clickable: 'true',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + '<span>of</span>' + '<span class="' + totalClass + '"></span>';
+        },
+      },
+    },
     767: {
       slidesPerView: 2,
       slidesPerGroup: 2,
