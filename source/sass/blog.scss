@@ -84,6 +84,7 @@
 
   .blog__articles {
     grid-template-columns: 1fr;
+    grid-template-rows: max-content;
     grid-gap: 0;
     grid-row-gap: 40px;
     margin-top: 50px;

@@ -276,6 +276,7 @@ form {
     margin: 0 auto;
     margin-top: 15px;
     padding-left: 4px;
+    margin-bottom: 54px;
   }
 
   form span {
@@ -314,6 +315,11 @@ form {
       position: relative;
       top: 2px;
     }
+  }
+
+  .login--small-screen {
+    position: absolute;
+    overflow: scroll;
   }
 
   @media (min-resolution: 2dppx) {

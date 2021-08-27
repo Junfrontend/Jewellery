@@ -17,7 +17,6 @@ var filterHeader = Array.from(document.querySelectorAll('.filter__header'));
 var filterShowButton = document.querySelector('.filter__show-button');
 var filter = document.querySelector('.filter');
 var addToCartTemp = document.querySelector('.item-was-added-to-cart-template');
-var cartTemp = document.querySelector('.item-was-added-to-cart-template__mask');
 var addToCartButton = document.querySelector('.item-card__add-to-cart-button');
 var hideCartTemp = document.querySelector('.item-was-added-to-cart-template__close-button');
 var itemsCartCounter = document.querySelector('.counter');
@@ -31,21 +30,7 @@ function showMenu() {
   menuButton.classList.toggle('top-bar__menu-button--menu-opened');
   iconCart.classList.toggle('top-bar__icon-cart--menu-opened');
   headerMenu.classList.toggle('nav-bar--closed');
-  if (window.innerHeight < 685) {
-    window.addEventListener(('scroll'), function () {
-      if (window.pageYOffset >= 115 && window.innerWidth < 768) {
-        window.scrollTo(0, 115);
-      }
-      if (window.pageYOffset >= 220 && window.innerWidth >= 768) {
-        window.scrollTo(0, 220);
-      }
-    });
-
-  } else {
-    header.classList.toggle('header--menu-opened');
-    header.classList.toggle('header--menu-opened-big');
-    body.classList.toggle('overflow-hidden');
-  }
+  body.classList.toggle('overflow-hidden');
 }
 
 function showOrCloseLoginModal(e) {
@@ -55,16 +40,15 @@ function showOrCloseLoginModal(e) {
     body.classList.toggle('overflow-hidden');
   } else {
     loginModal.classList.toggle('login--small-screen');
-    loginModal.classList.toggle('overflow-scroll');
+    body.classList.toggle('overflow-hidden');
   }
-
   emailField.focus();
 }
 
 window.addEventListener(('keyup'), function (e) {
   if (e.key === 'Tab' && !loginModal.classList.contains('login--hidden')) {
     if (String(e.target.parentNode.classList.value.slice(0, 5)) !== 'login' &&
-    String(e.target.classList.value.slice(0, 5)) !== 'login') {
+      String(e.target.classList.value.slice(0, 5)) !== 'login') {
       emailField.focus();
     }
   }
@@ -142,6 +126,7 @@ function showFilter() {
 function showOrHideItemCartTemp() {
   addToCartTemp.classList.toggle('item-was-added-to-cart-template--closed');
   document.querySelector('body').classList.toggle('overflow-hidden');
+  window.scrollTo(0, 0);
 }
 
 if (filterShowButton) {
@@ -164,10 +149,9 @@ if (addToCartButton) {
 
   window.addEventListener(('keyup'), function (e) {
     if (e.key === 'Tab' && !addToCartTemp.classList.contains('item-was-added-to-cart-template--closed')) {
-      console.log(e.target.parentNode.classList.value, 'ddd', e.target.classList.value);
       if (String(e.target.classList.value.slice(0, 7)) !== 'counter' &&
-      String(e.target.parentNode.classList.value.slice(0, 7)) !== 'counter' &&
-      String(e.target.classList.value.slice(0, 4)) !== 'item') {
+        String(e.target.parentNode.classList.value.slice(0, 7)) !== 'counter' &&
+        String(e.target.classList.value.slice(0, 4)) !== 'item') {
         hideCartTemp.focus();
       }
     }
